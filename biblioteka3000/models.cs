@@ -64,6 +64,11 @@ namespace biblioteka3000
             : base(title, author, year, lenght, genre)
         {
         }
+
+        public override string ShowInfo()
+        {
+            return $"A Book written by {Author} in {Year} and named {Title}. Has {Lenght} pages. Genre is {Genre}.";
+        }
     }
 
     public class Film : Multimedia
