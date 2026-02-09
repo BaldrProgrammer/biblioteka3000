@@ -1,0 +1,15 @@
+/home/administrator/school/biblioteka3000/biblioteka3000/bin/Debug/net8.0/biblioteka3000
+/home/administrator/school/biblioteka3000/biblioteka3000/bin/Debug/net8.0/biblioteka3000.deps.json
+/home/administrator/school/biblioteka3000/biblioteka3000/bin/Debug/net8.0/biblioteka3000.runtimeconfig.json
+/home/administrator/school/biblioteka3000/biblioteka3000/bin/Debug/net8.0/biblioteka3000.dll
+/home/administrator/school/biblioteka3000/biblioteka3000/bin/Debug/net8.0/biblioteka3000.pdb
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.GeneratedMSBuildEditorConfig.editorconfig
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.AssemblyInfoInputs.cache
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.AssemblyInfo.cs
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.csproj.CoreCompileInputs.cache
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.sourcelink.json
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.dll
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/refint/biblioteka3000.dll
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.pdb
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/biblioteka3000.genruntimeconfig.cache
+/home/administrator/school/biblioteka3000/biblioteka3000/obj/Debug/net8.0/ref/biblioteka3000.dll

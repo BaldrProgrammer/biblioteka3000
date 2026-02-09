@@ -1,6 +1,4 @@
-namespace biblioteka3000;
-
-public class Models
+namespace biblioteka3000
 {
     public abstract class Multimedia
     {
@@ -17,6 +15,11 @@ public class Models
             Year = year;
             Lenght = lenght;
             Genre = genre;
+        }
+
+        public virtual string ShowInfo()
+        {
+            return $"A Multimedia with title {Title}, authorship {Author}, whis is {Year} year and {Genre}. It has {Lenght} of something lenght.";
         }
     }
 
