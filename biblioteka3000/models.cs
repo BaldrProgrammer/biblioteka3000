@@ -4,28 +4,28 @@ public class Models
 {
     public abstract class Multimedia
     {
-        private string title;
-        private string author;
-        private int year;
-        private string genre;
+        private string Title { get; set; }
+        private string Author { get; set; }
+        private int Year { get; set; }
+        private string Genre { get; set; }
 
         public Multimedia(string title, string author, int year, string genre)
         {
-            this.title = title;
-            this.author = author;
-            this.year = year;
-            this.genre = genre;
+            Title = title;
+            Author = author;
+            Year = year;
+            Genre = genre;
         }
     }
 
     public class Book : Multimedia
     {
-        private int pageLenght;
+        private int PageLenght { get; set; }
 
         public Book(string title, string author, int year, int pageLenght, string genre)
             : base(title, author, year, genre)
         {
-            this.pageLenght = pageLenght;
+            PageLenght = pageLenght;
         }
     }
 }
