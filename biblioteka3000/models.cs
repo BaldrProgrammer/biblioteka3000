@@ -7,25 +7,32 @@ public class Models
         private string Title { get; set; }
         private string Author { get; set; }
         private int Year { get; set; }
+        private int Lenght { get; set; }
         private string Genre { get; set; }
 
-        public Multimedia(string title, string author, int year, string genre)
+        public Multimedia(string title, string author, int year, int lenght, string genre)
         {
             Title = title;
             Author = author;
             Year = year;
+            Lenght = lenght;
             Genre = genre;
         }
     }
 
     public class Book : Multimedia
     {
-        private int PageLenght { get; set; }
-
-        public Book(string title, string author, int year, int pageLenght, string genre)
-            : base(title, author, year, genre)
+        public Book(string title, string author, int year, int lenght, string genre)
+            : base(title, author, year, lenght, genre)
         {
-            PageLenght = pageLenght;
+        }
+    }
+    
+    public class Film : Multimedia
+    {
+        public Film(string title, string author, int year, int lenght, string genre)
+            : base(title, author, year, lenght, genre)
+        {
         }
     }
 }
