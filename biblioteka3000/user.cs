@@ -1,0 +1,4 @@
+namespace biblioteka3000
+{
+    
+}

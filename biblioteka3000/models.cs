@@ -54,7 +54,7 @@ namespace biblioteka3000
         public virtual string ShowInfo()
         {
             return
-                $"A Multimedia with title {Title}, authorship {Author}, whis is {Year} year and {Genre}. It has {Lenght} of something lenght.";
+                $"A Multimedia with title {Title}, authorship {Author}, this is {Year} year and {Genre}. It has {Lenght} of something lenght.";
         }
     }
 
@@ -81,6 +81,19 @@ namespace biblioteka3000
         public override string ShowInfo()
         {
             return $"A Movie filmed by {Author} in {Year} and named {Title}. Has {Lenght} minutes. Genre is {Genre}.";
+        }
+    }
+    
+    public class Game : Multimedia
+    {
+        public Game(string title, string author, int year, int lenght, string genre)
+            : base(title, author, year, lenght, genre)
+        {
+        }
+        
+        public override string ShowInfo()
+        {
+            return $"A Game developed by {Author} in {Year} and named {Title}. {Lenght}+- hours needs to be fully completed. Genre of the game is {Genre}.";
         }
     }
 }
