@@ -56,6 +56,11 @@ namespace biblioteka3000
             return
                 $"A Multimedia with title {Title}, authorship {Author}, this is {Year} year and {Genre}. It has {Lenght} of something lenght.";
         }
+
+        ~Multimedia()
+        {
+            Console.WriteLine("Object has destroyed.");
+        }
     }
 
     public class Book : Multimedia
