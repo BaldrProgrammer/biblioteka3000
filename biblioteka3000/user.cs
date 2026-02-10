@@ -9,7 +9,7 @@ namespace biblioteka3000
             get => _login;
             set => _login = value ?? throw new ArgumentNullException(nameof(value));
         }
-        
+
         private string _password;
 
         public string Password
@@ -17,13 +17,20 @@ namespace biblioteka3000
             get => _password;
             set => _password = value ?? throw new ArgumentNullException(nameof(value));
         }
-        
+
         private List<Multimedia> _multimedias;
 
         public List<Multimedia> Multimedias
         {
             get => _multimedias;
             set => _multimedias = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
+        public User(string login, string password, List<Multimedia> multimedias)
+        {
+            Login = login;
+            Password = password;
+            Multimedias = multimedias;
         }
     }
 }
