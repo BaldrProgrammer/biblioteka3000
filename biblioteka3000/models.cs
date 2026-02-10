@@ -71,11 +71,16 @@ namespace biblioteka3000
         }
     }
 
-    public class Film : Multimedia
+    public class Movie : Multimedia
     {
-        public Film(string title, string author, int year, int lenght, string genre)
+        public Movie(string title, string author, int year, int lenght, string genre)
             : base(title, author, year, lenght, genre)
         {
+        }
+        
+        public override string ShowInfo()
+        {
+            return $"A Movie filmed by {Author} in {Year} and named {Title}. Has {Lenght} minutes. Genre is {Genre}.";
         }
     }
 }
