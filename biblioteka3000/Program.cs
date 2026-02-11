@@ -1,14 +1,22 @@
-﻿using biblioteka3000;
+﻿using System.Text.Json;
+using biblioteka3000;
+
 {
-    Book wiedzmin = new Book( "Wiedźmin", "Andrzej Sapkowski", 1990, 320, "Fantasy" ); 
-    Movie matrix = new Movie( "Matrix", "Wachowscy", 1999, 136, "Sci-Fi" );
+    string? username = Console.ReadLine();
+    string? password = Console.ReadLine();
+    string text = File.ReadAllText("users.json");
+    var json = JsonSerializer.Deserialize<Dictionary<string, string>>(text);
+    Console.WriteLine(json);
 
-    Console.WriteLine(wiedzmin.ShowInfo());
-    Console.WriteLine(matrix.ShowInfo());
-
-    User user = new User("admin", "admin", new List<Multimedia>());
-    user.Multimedias.Add(wiedzmin);
-    user.Multimedias.Add(matrix);
-    
-    Console.WriteLine(user.Multimedias);
+    foreach (var i in json)
+    {
+        if (i.Key == username)
+        {
+            if (i.Value == password)
+            {
+                User user = new User(username, password, new List<Multimedia>());
+                Console.WriteLine(user.Login);
+            }
+        }
+    }
 }
