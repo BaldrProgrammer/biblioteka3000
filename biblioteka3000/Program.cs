@@ -15,7 +15,14 @@ using biblioteka3000;
             if (i.Value == password)
             {
                 User user = new User(username, password, new List<Multimedia>());
-                Console.WriteLine(user.Login);
+                while (true)
+                {
+                    string? command = Console.ReadLine();
+                    if (command == "take")
+                    {
+                        Console.WriteLine(command);
+                    }
+                }
             }
         }
     }
