@@ -17,17 +17,18 @@ using biblioteka3000;
         {
             if (i.Value == password)
             {
+                Library library = Library.Instance;
+                library.Archive = new List<Multimedia>();
                 User user = new User(username, password, new List<Multimedia>());
                 while (true)
                 {
                     string? command = Console.ReadLine();
-                    if (command == "Add")
+                    if (command.StartsWith("Add"))
                     {
                         List<string> commandargs1 = command.Split().ToList();
                         if (commandargs1[1] == "Book")
                         {
                             List<string> commandargs2 = commandargs1[2].Split(",").ToList();
-                            Library library = Library.Instance;
                             Book instance = new Book(
                                 commandargs2[0],
                                 commandargs2[1],
@@ -36,6 +37,7 @@ using biblioteka3000;
                                 commandargs2[4]
                             );
                             library.Archive.Add(instance);
+                            Console.WriteLine("Added Book.");
                         }
                     }
                     
@@ -47,7 +49,7 @@ using biblioteka3000;
                     {
                         IRental.Return(user, wiedzmin);
                     }
-                    else if (command == "library")
+                    else if (command == "my_library")
                     {
                         foreach (var multimedia in user.Multimedias)
                         {
