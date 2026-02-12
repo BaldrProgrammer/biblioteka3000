@@ -6,11 +6,7 @@ using biblioteka3000;
     string? password = Console.ReadLine();
     string text = File.ReadAllText("users.json");
     var json = JsonSerializer.Deserialize<Dictionary<string, string>>(text);
-    Console.WriteLine(json);
     
-    Book wiedzmin = new Book( "Wiedźmin", "Andrzej Sapkowski", 1990, 320, "Fantasy" ); 
-    Movie matrix = new Movie( "Matrix", "Wachowscy", 1999, 136, "Sci-Fi" );
-
     foreach (var i in json)
     {
         if (i.Key == username)
@@ -43,17 +39,25 @@ using biblioteka3000;
                     
                     if (command == "take")
                     {
-                        IRental.Take(user, wiedzmin);
+                        IRental.Take(user, new Book("","",1,1,""));
                     }
                     else if (command == "return")
                     {
-                        IRental.Return(user, wiedzmin);
+                        IRental.Return(user, new Book("","",1,1,""));
                     }
                     else if (command == "my_library")
                     {
                         foreach (var multimedia in user.Multimedias)
                         {
                             Console.WriteLine(multimedia.ShowInfo());
+                        }
+                    }
+                    else if (command == "library")
+                    {
+                        Console.WriteLine(library.Archive);
+                        for (int ii = 0; ii < library.Archive.Count; ii++ )
+                        {
+                            Console.WriteLine($"{ii}. "+ library.Archive[ii].ShowInfo());
                         }
                     }
                 }
