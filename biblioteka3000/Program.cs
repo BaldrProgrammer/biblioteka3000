@@ -36,6 +36,14 @@ using biblioteka3000;
                             Console.WriteLine("Added Book.");
                         }
                     }
+                    else if (command == "Save")
+                    {
+                        string userLibraryJson = JsonSerializer.Serialize(user.Multimedias, new JsonSerializerOptions { WriteIndented = true });
+                        string libraryJson = JsonSerializer.Serialize(library.Archive, new JsonSerializerOptions { WriteIndented = true });
+
+                        File.WriteAllText("user_library.json", userLibraryJson);
+                        File.WriteAllText("library.json", libraryJson);
+                    }
                     
                     if (command.StartsWith("take"))
                     {
