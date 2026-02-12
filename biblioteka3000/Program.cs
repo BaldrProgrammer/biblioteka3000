@@ -42,15 +42,16 @@ using biblioteka3000;
                         List<string> commandargs = command.Split().ToList();
                         IRental.Take(user, library.Archive[int.Parse(commandargs[1])]);
                     }
-                    else if (command == "return")
+                    else if (command.StartsWith("return"))
                     {
-                        IRental.Return(user, new Book("","",1,1,""));
+                        List<string> commandargs = command.Split().ToList();
+                        IRental.Return(user, user.Multimedias[int.Parse(commandargs[1])]);
                     }
                     else if (command == "my_library")
                     {
-                        for (int ii = 0; ii < library.Archive.Count; ii++ )
+                        for (int ii = 0; ii < user.Multimedias.Count; ii++ )
                         {
-                            Console.WriteLine($"{ii}. "+ library.Archive[ii].ShowInfo());
+                            Console.WriteLine($"{ii}. "+ user.Multimedias[ii].ShowInfo());
                         }
                     }
                     else if (command == "library")
