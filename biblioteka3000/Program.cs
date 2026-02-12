@@ -21,6 +21,24 @@ using biblioteka3000;
                 while (true)
                 {
                     string? command = Console.ReadLine();
+                    if (command == "Add")
+                    {
+                        List<string> commandargs1 = command.Split().ToList();
+                        if (commandargs1[1] == "Book")
+                        {
+                            List<string> commandargs2 = commandargs1[2].Split(",").ToList();
+                            Library library = Library.Instance;
+                            Book instance = new Book(
+                                commandargs2[0],
+                                commandargs2[1],
+                                int.Parse(commandargs2[2]),
+                                int.Parse(commandargs2[3]),
+                                commandargs2[4]
+                            );
+                            library.Archive.Add(instance);
+                        }
+                    }
+                    
                     if (command == "take")
                     {
                         IRental.Take(user, wiedzmin);
