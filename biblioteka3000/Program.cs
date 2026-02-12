@@ -40,12 +40,16 @@ using biblioteka3000;
                     if (command.StartsWith("take"))
                     {
                         List<string> commandargs = command.Split().ToList();
-                        IRental.Take(user, library.Archive[int.Parse(commandargs[1])]);
+                        int index = int.Parse(commandargs[1]);
+                        IRental.Take(user, library.Archive[index]);
+                        library.Archive.RemoveAt(index);
                     }
                     else if (command.StartsWith("return"))
                     {
                         List<string> commandargs = command.Split().ToList();
-                        IRental.Return(user, user.Multimedias[int.Parse(commandargs[1])]);
+                        int index = int.Parse(commandargs[1]);
+                        IRental.Return(user, user.Multimedias[index]);
+                        library.Archive.Insert(index, user.Multimedias[index]);
                     }
                     else if (command == "my_library")
                     {
