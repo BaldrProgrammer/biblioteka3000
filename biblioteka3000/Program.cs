@@ -37,9 +37,10 @@ using biblioteka3000;
                         }
                     }
                     
-                    if (command == "take")
+                    if (command.StartsWith("take"))
                     {
-                        IRental.Take(user, new Book("","",1,1,""));
+                        List<string> commandargs = command.Split().ToList();
+                        IRental.Take(user, library.Archive[int.Parse(commandargs[1])]);
                     }
                     else if (command == "return")
                     {
@@ -47,9 +48,9 @@ using biblioteka3000;
                     }
                     else if (command == "my_library")
                     {
-                        foreach (var multimedia in user.Multimedias)
+                        for (int ii = 0; ii < library.Archive.Count; ii++ )
                         {
-                            Console.WriteLine(multimedia.ShowInfo());
+                            Console.WriteLine($"{ii}. "+ library.Archive[ii].ShowInfo());
                         }
                     }
                     else if (command == "library")
