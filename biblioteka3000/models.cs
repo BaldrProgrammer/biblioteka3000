@@ -3,7 +3,6 @@ namespace biblioteka3000
     public abstract class Multimedia
     {
         private string _title;
-
         public string Title
         {
             get => _title;
@@ -11,7 +10,6 @@ namespace biblioteka3000
         }
 
         private string _author;
-
         public string Author
         {
             get => _author;
@@ -19,7 +17,6 @@ namespace biblioteka3000
         }
 
         private int _year;
-
         public int Year
         {
             get => _year;
@@ -27,7 +24,6 @@ namespace biblioteka3000
         }
 
         private int _lenght;
-
         public int Lenght
         {
             get => _lenght;
@@ -35,7 +31,6 @@ namespace biblioteka3000
         }
 
         private string _genre;
-
         public string Genre
         {
             get => _genre;
@@ -43,7 +38,6 @@ namespace biblioteka3000
         }
 
         private string _type = "Multimedia";
-
         public string Type
         {
             get => _type;
