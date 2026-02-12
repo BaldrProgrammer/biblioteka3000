@@ -29,6 +29,13 @@ using biblioteka3000;
                     {
                         IRental.Return(user, wiedzmin);
                     }
+                    else if (command == "library")
+                    {
+                        foreach (var multimedia in user.Multimedias)
+                        {
+                            Console.WriteLine(multimedia.ShowInfo());
+                        }
+                    }
                 }
             }
         }
