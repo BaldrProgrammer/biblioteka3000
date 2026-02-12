@@ -42,6 +42,14 @@ namespace biblioteka3000
             set => _genre = value ?? throw new ArgumentNullException(nameof(value));
         }
 
+        private string _type = "Multimedia";
+
+        public string Type
+        {
+            get => _type;
+            set => _type = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
         public Multimedia(string title, string author, int year, int lenght, string genre)
         {
             Title = title;
@@ -82,23 +90,24 @@ namespace biblioteka3000
             : base(title, author, year, lenght, genre)
         {
         }
-        
+
         public override string ShowInfo()
         {
             return $"A Movie filmed by {Author} in {Year} and named {Title}. Has {Lenght} minutes. Genre is {Genre}.";
         }
     }
-    
+
     public class Game : Multimedia
     {
         public Game(string title, string author, int year, int lenght, string genre)
             : base(title, author, year, lenght, genre)
         {
         }
-        
+
         public override string ShowInfo()
         {
-            return $"A Game developed by {Author} in {Year} and named {Title}. {Lenght}+- hours needs to be fully completed. Genre of the game is {Genre}.";
+            return
+                $"A Game developed by {Author} in {Year} and named {Title}. {Lenght}+- hours needs to be fully completed. Genre of the game is {Genre}.";
         }
     }
 }
