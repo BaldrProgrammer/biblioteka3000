@@ -25,6 +25,10 @@ using biblioteka3000;
                     {
                         IRental.Take(user, wiedzmin);
                     }
+                    else if (command == "return")
+                    {
+                        IRental.Return(user, wiedzmin);
+                    }
                 }
             }
         }
