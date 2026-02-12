@@ -76,6 +76,7 @@ namespace biblioteka3000
         public Book(string title, string author, int year, int lenght, string genre)
             : base(title, author, year, lenght, genre)
         {
+            Type = "Book";
         }
 
         public override string ShowInfo()
@@ -89,6 +90,7 @@ namespace biblioteka3000
         public Movie(string title, string author, int year, int lenght, string genre)
             : base(title, author, year, lenght, genre)
         {
+            Type = "Movie";
         }
 
         public override string ShowInfo()
@@ -102,6 +104,7 @@ namespace biblioteka3000
         public Game(string title, string author, int year, int lenght, string genre)
             : base(title, author, year, lenght, genre)
         {
+            Type = "Game";
         }
 
         public override string ShowInfo()
