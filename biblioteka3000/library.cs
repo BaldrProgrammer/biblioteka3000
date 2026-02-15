@@ -5,13 +5,16 @@ public sealed class Library
     private static Library? _instance;
 
     private List<Multimedia> _archive;
+
     public List<Multimedia> Archive
     {
         get => _archive;
         set => _archive = value ?? throw new ArgumentNullException(nameof(value));
     }
 
-    private Library() { }
+    private Library()
+    {
+    }
 
     public static Library Instance
     {
@@ -21,6 +24,7 @@ public sealed class Library
             {
                 _instance = new Library();
             }
+
             return _instance;
         }
     }

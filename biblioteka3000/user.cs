@@ -3,6 +3,7 @@ namespace biblioteka3000
     public class User
     {
         private string _login;
+
         public string Login
         {
             get => _login;
@@ -10,6 +11,7 @@ namespace biblioteka3000
         }
 
         private string _password;
+
         public string Password
         {
             get => _password;
@@ -17,6 +19,7 @@ namespace biblioteka3000
         }
 
         private List<Multimedia> _multimedias;
+
         public List<Multimedia> Multimedias
         {
             get => _multimedias;

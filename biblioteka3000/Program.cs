@@ -6,7 +6,7 @@ using biblioteka3000;
     string? password = Console.ReadLine();
     string text = File.ReadAllText("users.json");
     var json = JsonSerializer.Deserialize<Dictionary<string, string>>(text);
-    
+
     foreach (var i in json)
     {
         if (i.Key == username)
@@ -38,13 +38,15 @@ using biblioteka3000;
                     }
                     else if (command == "Save")
                     {
-                        string userLibraryJson = JsonSerializer.Serialize(user.Multimedias, new JsonSerializerOptions { WriteIndented = true });
-                        string libraryJson = JsonSerializer.Serialize(library.Archive, new JsonSerializerOptions { WriteIndented = true });
+                        string userLibraryJson = JsonSerializer.Serialize(user.Multimedias,
+                            new JsonSerializerOptions { WriteIndented = true });
+                        string libraryJson = JsonSerializer.Serialize(library.Archive,
+                            new JsonSerializerOptions { WriteIndented = true });
 
                         File.WriteAllText("user_library.json", userLibraryJson);
                         File.WriteAllText("library.json", libraryJson);
                     }
-                    
+
                     if (command.StartsWith("take"))
                     {
                         List<string> commandargs = command.Split().ToList();
@@ -61,17 +63,17 @@ using biblioteka3000;
                     }
                     else if (command == "my_library")
                     {
-                        for (int ii = 0; ii < user.Multimedias.Count; ii++ )
+                        for (int ii = 0; ii < user.Multimedias.Count; ii++)
                         {
-                            Console.WriteLine($"{ii}. "+ user.Multimedias[ii].ShowInfo());
+                            Console.WriteLine($"{ii}. " + user.Multimedias[ii].ShowInfo());
                         }
                     }
                     else if (command == "library")
                     {
                         Console.WriteLine(library.Archive);
-                        for (int ii = 0; ii < library.Archive.Count; ii++ )
+                        for (int ii = 0; ii < library.Archive.Count; ii++)
                         {
-                            Console.WriteLine($"{ii}. "+ library.Archive[ii].ShowInfo());
+                            Console.WriteLine($"{ii}. " + library.Archive[ii].ShowInfo());
                         }
                     }
                 }
