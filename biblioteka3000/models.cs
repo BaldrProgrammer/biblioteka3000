@@ -58,6 +58,15 @@ namespace biblioteka3000
             Lenght = lenght;
             Genre = genre;
         }
+        
+        public Multimedia(Multimedia other)
+        {
+            Title = other._title;
+            Author = other._author;
+            Year = other._year;
+            Lenght = other._lenght;
+            Genre = other._genre;
+        }
 
         public virtual string ShowInfo()
         {

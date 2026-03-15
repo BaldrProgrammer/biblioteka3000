@@ -32,5 +32,12 @@ namespace biblioteka3000
             Password = password;
             Multimedias = multimedias;
         }
+        
+        public User(User other)
+        {
+            Login = other._login;
+            Password = other._password;
+            Multimedias = other._multimedias;
+        }
     }
 }
