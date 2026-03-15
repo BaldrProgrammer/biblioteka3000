@@ -47,18 +47,19 @@ using biblioteka3000;
                         File.WriteAllText("library.json", libraryJson);
                     }
 
+                    RentalService rentalService = new RentalService();
                     if (command.StartsWith("take"))
                     {
                         List<string> commandargs = command.Split().ToList();
                         int index = int.Parse(commandargs[1]);
-                        IRental.Take(user, library.Archive[index]);
+                        rentalService.Take(user, library.Archive[index]);
                         library.Archive.RemoveAt(index);
                     }
                     else if (command.StartsWith("return"))
                     {
                         List<string> commandargs = command.Split().ToList();
                         int index = int.Parse(commandargs[1]);
-                        IRental.Return(user, user.Multimedias[index]);
+                        rentalService.Return(user, user.Multimedias[index]);
                         library.Archive.Insert(index, user.Multimedias[index]);
                     }
                     else if (command == "my_library")

@@ -7,11 +7,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9885737-9c5a-4836-91ff-b439718f36f3" name="Changes" comment="" />
+    <list default="true" id="e9885737-9c5a-4836-91ff-b439718f36f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/biblioteka3000/rentalservice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.biblioteka3000/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.biblioteka3000/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/bin/Debug/net8.0/biblioteka3000.dll" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/bin/Debug/net8.0/biblioteka3000.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/bin/Debug/net8.0/biblioteka3000.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/bin/Debug/net8.0/biblioteka3000.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/interfaces.cs" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/interfaces.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.dll" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/biblioteka3000.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/ref/biblioteka3000.dll" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/ref/biblioteka3000.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/refint/biblioteka3000.dll" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/obj/Debug/net8.0/refint/biblioteka3000.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,6 +46,13 @@
     &quot;accountId&quot;: &quot;8ba4025a-5efd-4067-bdd2-aeb8713ac5da&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/biblioteka3000/interfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/biblioteka3000/library.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/biblioteka3000/models.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/biblioteka3000/rentalservice.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/biblioteka3000/user.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -37,20 +62,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.biblioteka3000.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="biblioteka3000" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -84,7 +110,11 @@
       <option name="presentableId" value="Default" />
       <updated>1770672104346</updated>
       <workItem from="1770672107373" duration="213000" />
-      <workItem from="1770672360877" duration="793000" />
+      <workItem from="1770672360877" duration="4189000" />
+      <workItem from="1770677949525" duration="16322000" />
+      <workItem from="1770932384516" duration="5753000" />
+      <workItem from="1771196250173" duration="5780000" />
+      <workItem from="1773605453921" duration="3071000" />
     </task>
     <servers />
   </component>
