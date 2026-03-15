@@ -48,6 +48,7 @@ using biblioteka3000;
                     }
 
                     RentalService rentalService = new RentalService();
+                    RatableService ratableService = new RatableService();
                     if (command.StartsWith("take"))
                     {
                         List<string> commandargs = command.Split().ToList();
@@ -76,6 +77,14 @@ using biblioteka3000;
                         {
                             Console.WriteLine($"{ii}. " + library.Archive[ii].ShowInfo());
                         }
+                    }
+                    else if (command.StartsWith("rate"))
+                    {
+                        List<string> commandargs = command.Split().ToList();
+                        int index = int.Parse(commandargs[1]);
+                        ratableService.Rate(library.Archive[index], int.Parse(commandargs[2]));
+                        Console.WriteLine("Thanks for rating!");
+                        // Add Book журнал,австрия,2026,12,новости
                     }
                 }
             }
