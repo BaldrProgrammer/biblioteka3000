@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9885737-9c5a-4836-91ff-b439718f36f3" name="Changes" comment="" />
+    <list default="true" id="e9885737-9c5a-4836-91ff-b439718f36f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.biblioteka3000/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.biblioteka3000/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteka3000/ratableservice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteka3000/ratableservice.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +103,7 @@
       <workItem from="1770677949525" duration="16322000" />
       <workItem from="1770932384516" duration="5753000" />
       <workItem from="1771196250173" duration="5780000" />
-      <workItem from="1773605453921" duration="5501000" />
+      <workItem from="1773605453921" duration="6154000" />
     </task>
     <servers />
   </component>

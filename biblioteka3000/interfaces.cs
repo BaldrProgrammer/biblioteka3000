@@ -8,6 +8,6 @@ namespace biblioteka3000
     
     public interface IRatable
     {
-        void Rate(User user, Multimedia multimedia, int rate);
+        void Rate(Multimedia multimedia, int rate);
     }
 }
