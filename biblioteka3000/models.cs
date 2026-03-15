@@ -68,11 +68,7 @@ namespace biblioteka3000
             Genre = other._genre;
         }
 
-        public virtual string ShowInfo()
-        {
-            return
-                $"A Multimedia with title {Title}, authorship {Author}, this is {Year} year and {Genre}. It has {Lenght} of something lenght.";
-        }
+        public abstract string ShowInfo();
 
         ~Multimedia()
         {
