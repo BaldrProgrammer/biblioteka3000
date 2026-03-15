@@ -42,13 +42,30 @@ namespace biblioteka3000
             set => _genre = value ?? throw new ArgumentNullException(nameof(value));
         }
 
-        private string _type = "Multimedia";
-
         public string Type
         {
-            get => _type;
-            set => _type = value ?? throw new ArgumentNullException(nameof(value));
+            get => _genre;
+            set => _genre = value ?? throw new ArgumentNullException(nameof(value));
         }
+
+        private string _type = "Multimedia";
+
+        public int Rate
+        {
+            get => _rate;
+            set => _rate = value;
+        }
+
+        private int _rate;
+
+        public int PeopleRated
+        {
+            get => _pplrated;
+            set => _pplrated = value;
+        }
+
+
+        private int _pplrated;
 
         public Multimedia(string title, string author, int year, int lenght, string genre)
         {
@@ -57,8 +74,10 @@ namespace biblioteka3000
             Year = year;
             Lenght = lenght;
             Genre = genre;
+            Rate = 0;
+            PeopleRated = 0;
         }
-        
+
         public Multimedia(Multimedia other)
         {
             Title = other._title;
@@ -66,6 +85,8 @@ namespace biblioteka3000
             Year = other._year;
             Lenght = other._lenght;
             Genre = other._genre;
+            Rate = other._rate;
+            PeopleRated = other._pplrated;
         }
 
         public abstract string ShowInfo();
