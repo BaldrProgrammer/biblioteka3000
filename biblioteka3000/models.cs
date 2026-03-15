@@ -107,7 +107,7 @@ namespace biblioteka3000
 
         public override string ShowInfo()
         {
-            return $"A Book written by {Author} in {Year} and named {Title}. Has {Lenght} pages. Genre is {Genre}.";
+            return $"A Book written by {Author} in {Year} and named {Title}. Has {Lenght} pages. Genre is {Genre}. Rate is {Rate/PeopleRated} from {PeopleRated} people.";
         }
     }
 
