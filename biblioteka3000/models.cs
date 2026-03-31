@@ -2,7 +2,7 @@ namespace biblioteka3000
 {
     public abstract class Multimedia
     {
-        private static List<Multimedia> s_multimedias = new List<Multimedia>();
+        private static List<Multimedia> _sMultimedias = new List<Multimedia>();
         
         private string _title;
 
@@ -78,7 +78,7 @@ namespace biblioteka3000
             Genre = genre;
             Rate = 0;
             PeopleRated = 0;
-            s_multimedias.Add(this);
+            _sMultimedias.Add(this);
         }
 
         public Multimedia(Multimedia other)
@@ -90,12 +90,12 @@ namespace biblioteka3000
             Genre = other._genre;
             Rate = other._rate;
             PeopleRated = other._pplrated;
-            s_multimedias.Add(this);
+            _sMultimedias.Add(this);
         }
 
         public static List<Multimedia> GetMultimedias()
         {
-            return s_multimedias;
+            return _sMultimedias;
         }
 
         public abstract string ShowInfo();
@@ -116,6 +116,10 @@ namespace biblioteka3000
 
         public override string ShowInfo()
         {
+            if (PeopleRated == 0)
+            {
+                return $"A Book written by {Author} in {Year} and named {Title}. Has {Lenght} pages. Genre is {Genre}. It is not rated.";
+            }
             return $"A Book written by {Author} in {Year} and named {Title}. Has {Lenght} pages. Genre is {Genre}. Rate is {Rate/PeopleRated} from {PeopleRated} people.";
         }
     }
