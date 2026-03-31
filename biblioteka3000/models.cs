@@ -2,6 +2,8 @@ namespace biblioteka3000
 {
     public abstract class Multimedia
     {
+        private static List<Multimedia> s_multimedias;
+        
         private string _title;
 
         public string Title
@@ -87,6 +89,11 @@ namespace biblioteka3000
             Genre = other._genre;
             Rate = other._rate;
             PeopleRated = other._pplrated;
+        }
+
+        public List<Multimedia> GetMultimedias()
+        {
+            return s_multimedias;
         }
 
         public abstract string ShowInfo();
