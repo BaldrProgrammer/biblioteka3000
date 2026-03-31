@@ -71,7 +71,6 @@ namespace biblioteka3000
 
         public Multimedia(string title, string author, int year, int lenght, string genre)
         {
-            List<Multimedia> s_multimedias = new List<Multimedia>();
             Title = title;
             Author = author;
             Year = year;
@@ -91,9 +90,10 @@ namespace biblioteka3000
             Genre = other._genre;
             Rate = other._rate;
             PeopleRated = other._pplrated;
+            s_multimedias.Add(this);
         }
 
-        public List<Multimedia> GetMultimedias()
+        public static List<Multimedia> GetMultimedias()
         {
             return s_multimedias;
         }

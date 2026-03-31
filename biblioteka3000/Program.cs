@@ -46,6 +46,13 @@ using biblioteka3000;
                         File.WriteAllText("user_library.json", userLibraryJson);
                         File.WriteAllText("library.json", libraryJson);
                     }
+                    else if (command == "GetAll")
+                    {
+                        foreach (var multimedia in Multimedia.GetMultimedias())
+                        {
+                            Console.WriteLine(multimedia.ShowInfo());
+                        }
+                    }
 
                     RentalService rentalService = new RentalService();
                     RatableService ratableService = new RatableService();
