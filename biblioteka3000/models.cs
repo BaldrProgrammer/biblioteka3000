@@ -2,7 +2,7 @@ namespace biblioteka3000
 {
     public abstract class Multimedia
     {
-        private static List<Multimedia> s_multimedias;
+        private static List<Multimedia> s_multimedias = new List<Multimedia>();
         
         private string _title;
 
@@ -71,6 +71,7 @@ namespace biblioteka3000
 
         public Multimedia(string title, string author, int year, int lenght, string genre)
         {
+            List<Multimedia> s_multimedias = new List<Multimedia>();
             Title = title;
             Author = author;
             Year = year;
@@ -78,6 +79,7 @@ namespace biblioteka3000
             Genre = genre;
             Rate = 0;
             PeopleRated = 0;
+            s_multimedias.Add(this);
         }
 
         public Multimedia(Multimedia other)
